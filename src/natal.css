@@ -7,7 +7,7 @@ html {
 .cartao {
   display: flex;
   flex-direction: column;
-  left: calc(50% - 7.5em);
+  left: calc(45% - 7.5em);
   top: calc(40% - 7.5em);
   align-content: center;
   text-align: center;
