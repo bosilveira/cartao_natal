@@ -1,0 +1,136 @@
+html {
+    font-size: 24px;
+    height: 100%;
+    background-image: linear-gradient(rgb(230, 230, 250), rgb(255, 255, 224));
+}
+
+.cartao {
+  display: flex;
+  flex-direction: column;
+  left: calc(50% - 7.5em);
+  top: calc(40% - 7.5em);
+  align-content: center;
+  text-align: center;
+  width: 15em;
+  height: 15em;
+  position: absolute;
+  padding: 1em;
+  border: 1em solid transparent;
+  border-radius: .5em;
+  background: linear-gradient(white, white)
+              padding-box,
+              repeating-linear-gradient(-45deg,
+              #FF7F7F 0, #FF7F7F 12.5%,
+              transparent 0, transparent 25%,
+              #3EB489 0, #3EB489 37.5%,
+              transparent 0, transparent 50%)
+              0 / 4.5em 4.5em;
+}
+  
+/* Formatação de texto com fontes Google */
+.feliz {
+  font-family: 'Fleur De Leah', cursive;
+  font-size: 2em;
+  color: #DC143C;
+  font-weight: 900;
+  margin: -.25em 0 -.15em 0;
+}
+.boas {
+  font-family: 'Festive', cursive;
+  font-size: 1.55em;
+  color: #DC143C;
+  font-weight: 900;
+  margin: -.29em 0 -.2em 0;
+
+}
+.ano {
+  font-family: 'Luxurious Script', cursive;
+  font-size: 1.55em;
+  color: #DC143C;
+  font-weight: 900;
+  margin: -.3em 0 -.075em 0;
+
+}
+.ano span {
+  font-family: 'Kaushan Script', cursive;
+}
+.familia {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.55em;
+  color: #DC143C;
+  font-weight: 900;
+  margin: -.2em 0 -.075em 0;
+}
+.familia span {
+  font-family: 'Permanent Marker', cursive;
+}
+.email {
+  font-family: 'Lato', sans-serif;
+  font-size: .55em;
+  color: #E60026;
+  font-weight: 600;
+  margin: 1.5em 0 0 0;
+}
+.email a {
+  text-decoration: none;
+  color: #E60026;
+}
+.email a:before {
+  content: '\00AB';
+}
+.email a:after {
+  content: '\00BB';
+}
+.data {
+  font-family: 'Lato', sans-serif;
+  font-size: .55em;
+  color: #E60026;
+  font-weight: 600;
+  margin: 0 0 0 0;
+}
+
+/* pontas centro-esquerda e baixo-direita */
+.estrela { 
+  font-size: inherit; 
+  position: relative;
+  display: block;
+  width: 0;
+  height: 0;
+  margin: .1em auto 1em;
+  left: .25em;
+  border-right: 1em solid transparent;
+  border-bottom: .7em solid #FFD700;
+  border-left: 1em solid transparent;
+  transform: rotate(35deg);
+}
+/* pontas centro-direita e baixo-esquerda */
+.estrela:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  top: -.7em;
+  left: -1.05em;
+  margin: .75em 0;
+  border-right: 1em solid transparent;
+  border-bottom: .7em solid #FFD700;
+  border-left: 1em solid transparent;
+  transform: rotate(-70deg);
+}
+/* ponta cima */
+.estrela::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  top: -.5em;
+  left: -.65em;
+  margin: 0 0;
+  border-right: .3em solid transparent;
+  border-bottom: .8em solid #FFD700;
+  border-left: .3em solid transparent;
+  transform: rotate(-35deg);
+}
+
